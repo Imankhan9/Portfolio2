@@ -3,7 +3,35 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { 
+    title: 'Homepage',
+  });
 });
 
+/* GET home page. */
+router.get('/home', function(req, res, next) {
+  res.render('index', { 
+    title: 'Homepage',
+  });
+});
+/* GET About Me. */
+router.get('/about', function(req, res, next) {
+  res.render('index', { 
+    title: 'About Me',
+  });
+});
+
+/* GET Projects page */
+router.get('/projects', function(req, res, next) {
+  res.render('index', { 
+    title: 'Projects',
+  });
+});
+
+/* GET contact me. */
+router.get('/contact', function(req, res, next) {
+  res.render('index', { 
+    title: 'Contact Me',
+  });
+});
 module.exports = router;
